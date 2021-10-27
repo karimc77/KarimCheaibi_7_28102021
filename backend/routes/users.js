@@ -4,7 +4,7 @@ const router = express.Router();
 const auth = require('../middleware/auth'); // Authentification des routes via token
 const multer = require('../middleware/multer-config'); // Multer gère l'upload des fichiers
 
-const userCtrl = require('../controllers/users') // Utilsiation du controlleur User
+const userCtrl = require('../controllers/users') // Utilisation du controlleur User
 const pwdCtrl = require('../middleware/pwdControl'); // Importation du schéma permettant de contrôler la création de password
 const max = require("../middleware/limiter"); // Utilisation d'un limiter pour éviter les trop nombreuses tentatives de connexion
 

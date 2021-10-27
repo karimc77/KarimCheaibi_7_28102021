@@ -13,14 +13,8 @@ const app = express();
 // Middleware permettant d'éviter les erreurs CORS lors des communications back - front -----------------------------------------------------
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
-  ); // Ajout de headers aux requêtes
-  res.setHeader(
-    "Access-Control-Allow-Methods",
-    "GET, POST, PUT, DELETE, PATCH, OPTIONS"
-  ); // Acceptation des requêtes renseignées
+  res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"); // Ajout de headers aux requêtes
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, PATCH, OPTIONS"); // Acceptation des requêtes renseignées
   next();
 });
 

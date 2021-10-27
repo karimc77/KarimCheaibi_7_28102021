@@ -6,16 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DrHyde01/StephaneHeyd_7_03082021.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/DrHyde01/StephaneHeyd_7_03082021/issues"
-  },
-  "homepage": "https://github.com/DrHyde01/StephaneHeyd_7_03082021#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
