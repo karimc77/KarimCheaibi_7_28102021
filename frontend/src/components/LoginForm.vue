@@ -53,7 +53,7 @@ export default {
   },
 
   computed: {
-    // Fonction qui va permettre de désactiver le bouton connexion si les champs ne sont pas remplus
+    // Fonction qui va permettre de désactiver le bouton connexion si les champs ne sont pas remplis
     validatedFields: function() {
       if (this.usermane != "" && this.password != "") {
         return true;
