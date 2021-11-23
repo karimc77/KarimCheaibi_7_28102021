@@ -5,7 +5,7 @@ const jwt = require("jsonwebtoken"); // Jwt necessaire pour la gestion d'un toke
 exports.createComment = (req, res, next) => {
   // Nous avons besoin de récupérer l'userId par l'intermédiaire du token, à defaut du store frontend
   const token = req.headers.authorization.split(" ")[1];
-  const decodedToken = jwt.verify(token, "RANDOM_TOKEN_SECRET");
+  const decodedToken = jwt.verify(token, process.env.RANDOM_TOKEN_SECRET);
   const userId = decodedToken.userId;
 
   db.Post.findOne({

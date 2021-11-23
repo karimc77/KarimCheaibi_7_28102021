@@ -47,7 +47,7 @@ exports.login = (req, res, next) => {
           token: jwt.sign(
             // Sign permet d'encoder un nouveau token
             { userId: user.id },
-            "RANDOM_TOKEN_SECRET",
+            process.env.RANDOM_TOKEN_SECRET,
             { expiresIn: "24h" }
           ),
           message: "Bonjour " + user.username + " ! ",

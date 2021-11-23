@@ -8,7 +8,7 @@ exports.addLike = async (req, res, next) => {
   try {
     // Nous avons besoin de récupérer l'userId par l'intermédiaire du token, à defaut du store frontend
     const token = req.headers.authorization.split(" ")[1];
-    const decodedToken = jwt.verify(token, "RANDOM_TOKEN_SECRET");
+    const decodedToken = jwt.verify(token, process.env.RANDOM_TOKEN_SECRET);
     const userId = decodedToken.userId;
 
     const userLike = await db.Like.findOne({
