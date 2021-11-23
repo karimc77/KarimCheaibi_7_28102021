@@ -27,7 +27,7 @@
             class=" h-6 w-6 ml-1 text-green-400"
           />
           <p class="text-xs font-thin ml-2">
-            {{ moment(post.createdAt).format("[le] DD MMMM YYYY") }}
+            {{ moment(post.createdAt).format("[le] DD MMMM YYYY [à] HH:mm") }}
           </p>
         </div>
 
